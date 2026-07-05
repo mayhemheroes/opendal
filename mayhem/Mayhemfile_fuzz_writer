@@ -1,0 +1,9 @@
+project: opendal
+target: fuzz_writer
+
+cmds:
+  - cmd: /mayhem/fuzz_writer
+    libfuzzer: true
+    env:
+      OPENDAL_TEST: fs
+      OPENDAL_FS_ROOT: /tmp/opendal-fuzz-writer

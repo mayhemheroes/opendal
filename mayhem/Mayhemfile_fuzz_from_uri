@@ -1,0 +1,9 @@
+project: opendal
+target: fuzz_from_uri
+
+cmds:
+  - cmd: /mayhem/fuzz_from_uri
+    libfuzzer: true
+    env:
+      OPENDAL_TEST: fs
+      OPENDAL_FS_ROOT: /tmp/opendal-fuzz-from-uri

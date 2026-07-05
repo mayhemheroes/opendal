@@ -1,0 +1,9 @@
+project: opendal
+target: fuzz_path
+
+cmds:
+  - cmd: /mayhem/fuzz_path
+    libfuzzer: true
+    env:
+      OPENDAL_TEST: fs
+      OPENDAL_FS_ROOT: /tmp/opendal-fuzz-path

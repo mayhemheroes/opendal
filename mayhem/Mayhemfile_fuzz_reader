@@ -1,0 +1,9 @@
+project: opendal
+target: fuzz_reader
+
+cmds:
+  - cmd: /mayhem/fuzz_reader
+    libfuzzer: true
+    env:
+      OPENDAL_TEST: fs
+      OPENDAL_FS_ROOT: /tmp/opendal-fuzz-reader
